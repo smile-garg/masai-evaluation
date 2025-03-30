@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Recipe</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>Add a New Recipe</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="add-recipe.html" class="active">Add Recipe</a></li>
+                <li><a href="view-recipes.html">View Recipes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-container">
+            <h2>Enter Recipe Details</h2>
+            <form id="recipe-form">
+                <div class="input-group">
+                    <label for="recipe-name">Recipe Name:</label>
+                    <input type="text" id="recipe-name" placeholder="Enter recipe name" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="ingredients">Ingredients:</label>
+                    <textarea id="ingredients" placeholder="List ingredients separated by commas" required></textarea>
+                </div>
+
+                <div class="input-group">
+                    <label for="category">Category:</label>
+                    <select id="category" required>
+                        <option value="" disabled selected>Select Category</option>
+                        <option value="Breakfast">Breakfast</option>
+                        <option value="Lunch">Lunch</option>
+                        <option value="Dinner">Dinner</option>
+                        <option value="Dessert">Dessert</option>
+                        <option value="Drinks">Drinks</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="preparation">Preparation Steps:</label>
+                    <textarea id="preparation" placeholder="Describe step-by-step preparation" required></textarea>
+                </div>
+
+                <button type="submit" class="btn">Add Recipe</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
